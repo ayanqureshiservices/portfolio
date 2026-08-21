@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayan AC & Home Appliances Expert</title>
+    <title>Ayan | Premium AC & Home Appliances Expert</title>
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <!-- Background Decorative Glows -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
 
     <!-- Glassmorphism Navbar -->
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">Ayan Services</div>
+            <div class="logo">Ayan<span>Services</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Our Services</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="menu-btn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
-            <div class="hero-text">
-                <h1>Appliance Broken Down? <br><span>Don't worry, consider it fixed.</span></h1>
-                <p>Hi, I'm Ayan. I provide fast, reliable, and affordable repair and maintenance services for ACs,
-                    Refrigerators, and Washing Machines across Delhi. Top-quality work guaranteed right at your
-                    doorstep.</p>
+            <div class="hero-text fade-in-up">
+                <div class="badge">Top Rated Technician</div>
+                <h1>Appliance Broken Down? <br><span class="gradient-text">Consider it fixed.</span></h1>
+                <p>Hi, I'm Ayan. I provide fast, reliable, and affordable repair and maintenance services for ACs, Refrigerators, and Washing Machines across Delhi. Top-quality work guaranteed right at your doorstep.</p>
                 <div class="action-btns">
                     <a href="tel:9625914862" class="btn call-btn"><i class="fa-solid fa-phone"></i> Call: 9625914862</a>
-                    <a href="https://wa.me/919625914862" target="_blank" class="btn wa-btn"><i
-                            class="fa-brands fa-whatsapp"></i> WhatsApp Me</a>
+                    <a href="https://wa.me/919625914862" target="_blank" class="btn wa-btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp Me</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <!-- Aapne src="ayan.jpeg" kiya tha, isko wahi rehne diya hai -->
+            <div class="hero-image fade-in-up delay-1">
+                <div class="image-wrapper floating">
                     <img src="ayan.jpeg" alt="Ayan working on AC">
-                    <div class="experience-badge">Expert Technician</div>
+                    <div class="experience-badge">
+                        <i class="fa-solid fa-award"></i> Expert Technician
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,57 +58,49 @@
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="section-header">
-            <h2>What I Do</h2>
+        <div class="section-header fade-in-up">
+            <h2>Premium <span class="gradient-text">Services</span></h2>
             <p>Expert troubleshooting and servicing for your essential home appliances.</p>
         </div>
 
         <div class="service-cards">
             <!-- Card 1 -->
-            <div class="card">
-                <div class="icon"><i class="fa-solid fa-fan"></i></div>
+            <div class="card reveal">
+                <div class="icon-box"><i class="fa-solid fa-fan"></i></div>
                 <h3>AC Repair & Servicing</h3>
-                <p>Complete care for Split and Window units. Handling everything from professional installation and
-                    uninstallation to jet pump deep cleaning and precise gas charging (R32, R22, etc.) to restore
-                    optimal cooling fast.</p>
+                <p>Complete care for Split and Window units. Handling professional installation, deep cleaning, and precise gas charging to restore optimal cooling fast.</p>
             </div>
-
             <!-- Card 2 -->
-            <div class="card">
-                <div class="icon"><i class="fa-solid fa-snowflake"></i></div>
+            <div class="card reveal delay-1">
+                <div class="icon-box"><i class="fa-solid fa-snowflake"></i></div>
                 <h3>Refrigerator Repair</h3>
-                <p>Expert diagnostics for both single and double-door refrigerators. Quickly resolving cooling
-                    drop-offs, detecting gas leakages, and handling compressor repairs or genuine part replacements.</p>
+                <p>Expert diagnostics for both single and double-door refrigerators. Quickly resolving cooling drop-offs, gas leakages, and compressor repairs.</p>
             </div>
-
             <!-- Card 3 -->
-            <div class="card">
-                <div class="icon"><i class="fa-solid fa-shirt"></i></div>
-                <h3>Washing Machine Repair</h3>
-                <p>Comprehensive service for fully automatic and semi-automatic machines. Fixing common issues like
-                    unusual drum noise, motor failures, drainage blockages, and electronic control board faults.</p>
+            <div class="card reveal delay-2">
+                <div class="icon-box"><i class="fa-solid fa-shirt"></i></div>
+                <h3>Washing Machine</h3>
+                <p>Comprehensive service for automatic and semi-automatic machines. Fixing unusual drum noise, motor failures, and electronic control board faults.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="contact-box">
-            <h2>Need a Service? Get in Touch</h2>
-            <p>Give me a direct call or drop your address on WhatsApp. Our team will get back to you immediately to
-                schedule a visit.</p>
-
+        <div class="contact-box reveal">
+            <h2>Ready to fix your appliance?</h2>
+            <p>Give me a direct call or drop your address on WhatsApp. Our team will get back to you immediately.</p>
             <div class="contact-details">
                 <a href="tel:9625914862" class="contact-item">
-                    <i class="fa-solid fa-mobile-screen"></i>
+                    <div class="c-icon"><i class="fa-solid fa-mobile-screen"></i></div>
                     <span>+91 9625914862</span>
                 </a>
                 <a href="mailto:aq417298@gmail.com" class="contact-item">
-                    <i class="fa-regular fa-envelope"></i>
+                    <div class="c-icon"><i class="fa-regular fa-envelope"></i></div>
                     <span>aq417298@gmail.com</span>
                 </a>
                 <a href="https://instagram.com/ayanqureshi__00313" target="_blank" class="contact-item">
-                    <i class="fa-brands fa-instagram"></i>
+                    <div class="c-icon"><i class="fa-brands fa-instagram"></i></div>
                     <span>@ayanqureshi__00313</span>
                 </a>
             </div>
@@ -111,11 +108,9 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Ayan Home Appliances Service. All rights reserved.</p>
+        <p>&copy; 2026 Ayan Home Appliances Service. Crafted with precision.</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
